@@ -3,346 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reviu · Tarjetas NFC para reseñas de Google</title>
-<meta name="description" content="Reviu: tarjetas inteligentes NFC/QR que llevan a tus clientes directo a dejar una reseña de Google en segundos. Consigue más reseñas de 5 estrellas sin esfuerzo.">
-<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+<title>Kickoff Shirts · Camisetas de fútbol oficiales y retro</title>
+<meta name="description" content="Camisetas de selecciones, clubes y ediciones retro. Calidad oficial, envío rápido y pago 100% seguro con Stripe.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231f8a4c%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22>K</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/variables.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/pages.css">
 </head>
 <body>
 
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<header class="site-header" id="top">
+<header class="site-header">
   <div class="container header-inner">
-    <a href="#top" class="brand" aria-label="Reviu — inicio">
-      <img src="img/logo.svg" alt="" width="40" height="40" class="brand-mark">
-      <span class="brand-name">Reviu</span>
+    <a href="index.html" class="brand" aria-label="Kickoff Shirts — inicio">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span>Kickoff Shirts</span>
     </a>
 
     <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#beneficios">Beneficios</a>
-      <a href="#precios">Precios</a>
-      <a href="#opiniones">Opiniones</a>
-      <a href="#faq">Preguntas</a>
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="tienda.html?cat=seleccion">Selecciones</a>
+      <a href="tienda.html?cat=club">Clubes</a>
+      <a href="tienda.html?cat=retro">Retro</a>
     </nav>
 
-    <div class="header-cta">
-      <a href="#precios" class="btn btn-primary btn-sm">Comprar tarjetas</a>
+    <div class="header-actions">
+      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">
+        Carrito
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 
 <main id="contenido">
 
-  <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="dot"></span> Pago único · Sin suscripciones</p>
-        <h1>Convierte cada cliente feliz en una reseña de <span class="text-gradient">5 estrellas en Google</span></h1>
-        <p class="hero-sub">Reviu es la tarjeta inteligente que acerca tu negocio a la mejor reputación online. Tu cliente la acerca al móvil, y en segundos está escribiendo su opinión, sin apps, sin buscar tu ficha, sin excusas.</p>
-
-        <ul class="hero-points">
-          <li>Tecnología NFC + código QR de respaldo, compatible con cualquier móvil</li>
-          <li>Enlace directo a tu ficha de reseñas de Google, configurado por nosotros</li>
-          <li>Acabado premium tipo tarjeta metálica, lista para tu mostrador</li>
-        </ul>
-
+        <p class="eyebrow"><span aria-hidden="true">●</span> Envío en 24/48h · Pago seguro con Stripe</p>
+        <h1>Camisetas que llevas con <span class="text-accent">orgullo</span>, dentro y fuera del campo</h1>
+        <p class="hero-sub">Selecciones nacionales, grandes clubes y ediciones retro icónicas. Tejidos técnicos, tallas reales y un proceso de compra directo, sin sorpresas.</p>
         <div class="hero-actions">
-          <a href="#precios" class="btn btn-primary">Ver precios y comprar</a>
-          <a href="#como-funciona" class="btn btn-ghost">Cómo funciona</a>
+          <a href="tienda.html" class="btn btn-primary">Ver todas las camisetas</a>
+          <a href="tienda.html?cat=retro" class="btn btn-ghost">Explorar colección retro</a>
         </div>
-
-        <div class="hero-trust">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p>Diseñado para negocios que quieren crecer con reseñas reales, sin trucos ni reseñas falsas.</p>
-        </div>
+        <ul class="hero-points">
+          <li>Devolución gratuita en 30 días</li>
+          <li>Tallas de la S a la XXL</li>
+          <li>Catálogo curado, sin relleno</li>
+        </ul>
       </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="glow"></div>
-        <div class="phone-mock">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <div class="review-card-mock">
-              <img src="img/logo.svg" alt="" width="34" height="34">
-              <p class="rc-title">Tu negocio</p>
-              <div class="rc-stars">★★★★★</div>
-              <p class="rc-label">Deja tu reseña en Google</p>
-              <div class="rc-btn">Escribir opinión</div>
-            </div>
-          </div>
-        </div>
-        <div class="tap-card">
-          <img src="img/logo.svg" alt="Logotipo de Reviu" width="30" height="30">
-          <span>Reviu</span>
-          <div class="tap-wave" aria-hidden="true"></div>
-        </div>
+      <div class="hero-visual">
+        <img src="assets/products/rma-local-24-25.svg" alt="Camiseta Real Madrid Local 24/25" width="400" height="400">
+        <img src="assets/products/arg-local-24-25.svg" alt="Camiseta Argentina Local 24/25" width="400" height="400">
+        <img src="assets/products/bra-retro-1970.svg" alt="Camiseta Brasil Retro 1970" width="400" height="400">
       </div>
     </div>
   </section>
 
-  <!-- LOGOS / STATS BAR -->
-  <section class="stats-bar">
-    <div class="container stats-grid">
-      <div class="stat">
-        <p class="stat-num">&lt; 10 seg</p>
-        <p class="stat-label">para dejar una reseña</p>
-      </div>
-      <div class="stat">
-        <p class="stat-num">0 apps</p>
-        <p class="stat-label">necesarias para el cliente</p>
-      </div>
-      <div class="stat">
-        <p class="stat-num">24–48h</p>
-        <p class="stat-label">de envío tras la compra</p>
-      </div>
-      <div class="stat">
-        <p class="stat-num">30 días</p>
-        <p class="stat-label">de garantía de satisfacción</p>
-      </div>
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div><strong>&lt;20</strong><span>Modelos, seleccionados a mano</span></div>
+      <div><strong>100%</strong><span>Pago cifrado vía Stripe</span></div>
+      <div><strong>24/48h</strong><span>Envío a toda España</span></div>
+      <div><strong>30 días</strong><span>Para cambios y devoluciones</span></div>
     </div>
   </section>
 
-  <!-- COMO FUNCIONA -->
-  <section id="como-funciona" class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow eyebrow-center"><span class="dot"></span> Cómo funciona</p>
-        <h2>Tan simple como acercar el móvil</h2>
-        <p class="section-sub">Sin registros, sin fricciones. Tres pasos y tu cliente ya dejó su opinión.</p>
-      </div>
-
-      <div class="steps">
-        <article class="step">
-          <div class="step-num">1</div>
-          <h3>Acerca la tarjeta</h3>
-          <p>El cliente acerca su móvil a la tarjeta Reviu (o escanea el código QR si su teléfono no tiene NFC).</p>
-        </article>
-        <article class="step">
-          <div class="step-num">2</div>
-          <h3>Se abre tu ficha de Google</h3>
-          <p>Al instante, el móvil abre la ventana para escribir una reseña directamente en tu negocio de Google.</p>
-        </article>
-        <article class="step">
-          <div class="step-num">3</div>
-          <h3>Reseña publicada</h3>
-          <p>El cliente escribe y publica su opinión en segundos. Tu reputación online crece, sin esfuerzo para nadie.</p>
-        </article>
-      </div>
+  <section class="section container">
+    <div class="section-head">
+      <p class="eyebrow">Categorías</p>
+      <h2>Encuentra tu camiseta</h2>
+    </div>
+    <div class="category-grid">
+      <a class="category-card cat-seleccion" href="tienda.html?cat=seleccion">
+        <div><h3>Selecciones</h3><span>España, Argentina, Brasil y más</span></div>
+      </a>
+      <a class="category-card cat-club" href="tienda.html?cat=club">
+        <div><h3>Clubes</h3><span>Real Madrid, Barça, City, Boca</span></div>
+      </a>
+      <a class="category-card cat-retro" href="tienda.html?cat=retro">
+        <div><h3>Retro</h3><span>Ediciones históricas de leyenda</span></div>
+      </a>
     </div>
   </section>
 
-  <!-- BENEFICIOS -->
-  <section id="beneficios" class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow eyebrow-center"><span class="dot"></span> Beneficios</p>
-        <h2>Más reseñas significan más clientes</h2>
-        <p class="section-sub">Las reseñas son el primer motivo por el que un cliente nuevo confía en ti antes de cruzar la puerta.</p>
-      </div>
-
-      <div class="benefits-grid">
-        <article class="benefit-card">
-          <div class="benefit-icon" aria-hidden="true">★</div>
-          <h3>Mejora tu reputación</h3>
-          <p>Más reseñas positivas y recientes generan confianza inmediata en quien busca tu negocio.</p>
-        </article>
-        <article class="benefit-card">
-          <div class="benefit-icon" aria-hidden="true">▲</div>
-          <h3>Mejor posicionamiento local</h3>
-          <p>Google prioriza negocios con más reseñas y mejor valoración en las búsquedas cercanas.</p>
-        </article>
-        <article class="benefit-card">
-          <div class="benefit-icon" aria-hidden="true">∞</div>
-          <h3>Uso ilimitado</h3>
-          <p>Una misma tarjeta la puede usar cualquier cliente, tantas veces como quieras, sin coste extra.</p>
-        </article>
-        <article class="benefit-card">
-          <div class="benefit-icon" aria-hidden="true">⚙</div>
-          <h3>Configuración incluida</h3>
-          <p>Nosotros vinculamos la tarjeta a tu ficha de Google. Solo tienes que colocarla y empezar a usarla.</p>
-        </article>
-        <article class="benefit-card">
-          <div class="benefit-icon" aria-hidden="true">◆</div>
-          <h3>Diseño premium</h3>
-          <p>Acabado elegante tipo tarjeta metálica que combina con cualquier mostrador o recepción.</p>
-        </article>
-        <article class="benefit-card">
-          <div class="benefit-icon" aria-hidden="true">✓</div>
-          <h3>Sin cuotas mensuales</h3>
-          <p>Pagas una vez por tu tarjeta y es tuya para siempre. Sin sorpresas, sin renovaciones.</p>
-        </article>
-      </div>
+  <section class="section container">
+    <div class="section-head">
+      <p class="eyebrow">Destacados</p>
+      <h2>Recién llegadas</h2>
+    </div>
+    <div class="product-grid" id="featuredGrid" aria-live="polite">
+      <p class="text-muted">Cargando productos…</p>
     </div>
   </section>
 
-  <!-- PRECIOS -->
-  <section id="precios" class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow eyebrow-center"><span class="dot"></span> Precios</p>
-        <h2>Elige el pack que necesita tu negocio</h2>
-        <p class="section-sub">Pago único. Sin permanencias ni cuotas. Envío incluido en toda la península.</p>
-      </div>
-
-      <div class="pricing-grid">
-        <article class="price-card">
-          <h3>Tarjeta Individual</h3>
-          <p class="price-desc">Ideal para probar Reviu o para un pequeño negocio con un único punto de atención.</p>
-          <p class="price"><span class="price-amount">14,99&nbsp;€</span></p>
-          <p class="price-unit">Pago único · 1 tarjeta</p>
-          <ul class="price-features">
-            <li>1 tarjeta NFC + QR premium</li>
-            <li>Configuración y enlace a Google incluidos</li>
-            <li>Envío en 24–48h</li>
-            <li>Garantía de satisfacción de 30 días</li>
-          </ul>
-          <a href="#contacto" class="btn btn-outline btn-block">Comprar 1 tarjeta</a>
-        </article>
-
-        <article class="price-card price-card-featured">
-          <p class="price-badge">Más popular</p>
-          <h3>Pack 5 Tarjetas</h3>
-          <p class="price-desc">Perfecto para negocios con varios empleados, mesas o puntos de venta.</p>
-          <p class="price"><span class="price-amount">59,99&nbsp;€</span></p>
-          <p class="price-unit">Equivale a 12,00&nbsp;€ / tarjeta · ahorras un 20%</p>
-          <ul class="price-features">
-            <li>5 tarjetas NFC + QR premium</li>
-            <li>Configuración y enlace a Google incluidos</li>
-            <li>Envío prioritario en 24–48h</li>
-            <li>Garantía de satisfacción de 30 días</li>
-            <li>Soporte prioritario por email</li>
-          </ul>
-          <a href="#contacto" class="btn btn-primary btn-block">Comprar pack de 5</a>
-        </article>
-
-        <article class="price-card">
-          <h3>Pack 10 Tarjetas</h3>
-          <p class="price-desc">Para cadenas, franquicias o negocios con varias ubicaciones o turnos.</p>
-          <p class="price"><span class="price-amount">129,99&nbsp;€</span></p>
-          <p class="price-unit">Equivale a 13,00&nbsp;€ / tarjeta · ahorras un 13%</p>
-          <ul class="price-features">
-            <li>10 tarjetas NFC + QR premium</li>
-            <li>Configuración y enlace a Google incluidos</li>
-            <li>Envío prioritario en 24–48h</li>
-            <li>Garantía de satisfacción de 30 días</li>
-            <li>Soporte prioritario por email</li>
-            <li>Ideal para varios locales o mostradores</li>
-          </ul>
-          <a href="#contacto" class="btn btn-outline btn-block">Comprar pack de 10</a>
-        </article>
-      </div>
-
-      <p class="pricing-note">¿Necesitas más de 10 tarjetas o un diseño personalizado con tu logo? <a href="#contacto">Escríbenos</a> y te preparamos un presupuesto a medida.</p>
-    </div>
-  </section>
-
-  <!-- OPINIONES -->
-  <section id="opiniones" class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow eyebrow-center"><span class="dot"></span> Opiniones</p>
-        <h2>Negocios que ya confían en Reviu</h2>
-      </div>
-
-      <div class="testimonials-grid">
-        <article class="testimonial-card">
-          <div class="t-stars" aria-hidden="true">★★★★★</div>
-          <p>“Desde que colocamos la tarjeta en la caja, casi todos los clientes dejan reseña antes de irse. En un mes subimos de 45 a más de 90 reseñas.”</p>
-          <p class="t-author">Laura M. — Cafetería</p>
-        </article>
-        <article class="testimonial-card">
-          <div class="t-stars" aria-hidden="true">★★★★★</div>
-          <p>“Muy fácil de usar, tanto para nosotros como para los clientes. La calidad de la tarjeta sorprende, parece de metal de verdad.”</p>
-          <p class="t-author">Javier R. — Peluquería</p>
-        </article>
-        <article class="testimonial-card">
-          <div class="t-stars" aria-hidden="true">★★★★★</div>
-          <p>“Compramos el pack de 10 para nuestras tres tiendas. Configuración rápida y ya notamos más visibilidad en Google Maps.”</p>
-          <p class="t-author">Marta S. — Retail</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="section">
-    <div class="container container-narrow">
-      <div class="section-head">
-        <p class="eyebrow eyebrow-center"><span class="dot"></span> Preguntas frecuentes</p>
-        <h2>Todo lo que necesitas saber</h2>
-      </div>
-
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>¿Mi cliente necesita instalar alguna app?</summary>
-          <p>No. La tarjeta usa tecnología NFC, presente en la mayoría de smartphones modernos, y un código QR de respaldo para el resto. Solo hace falta acercar el móvil o escanear el código.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Qué pasa si el móvil de mi cliente no tiene NFC?</summary>
-          <p>Cada tarjeta incluye también un código QR impreso. El cliente puede escanearlo con la cámara de su móvil y accederá exactamente al mismo enlace.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Puedo personalizar la tarjeta con mi logo?</summary>
-          <p>Sí. Ofrecemos personalización de diseño para pedidos de 5 o más tarjetas. Escríbenos después de tu compra y te ayudamos a preparar el diseño.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Hay algún coste mensual o de mantenimiento?</summary>
-          <p>No. El precio que ves es un pago único. La tarjeta es tuya y puedes usarla de forma ilimitada, sin cuotas ni renovaciones.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Puedo cambiar el enlace de la tarjeta más adelante?</summary>
-          <p>Sí, es posible actualizar el destino del enlace si cambias de ubicación o de ficha de Google. Contacta con nuestro soporte y te lo gestionamos.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Cuánto tarda el envío?</summary>
-          <p>Preparamos y enviamos los pedidos en un plazo de 24 a 48 horas laborables desde la confirmación del pago.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="cta-final" id="contacto">
-    <div class="container cta-final-inner">
-      <h2>Empieza a conseguir más reseñas de 5 estrellas hoy mismo</h2>
-      <p>Elige tu pack de tarjetas Reviu y consigue que tus clientes hablen bien de ti, en segundos.</p>
-      <a href="#precios" class="btn btn-primary btn-lg">Ver precios</a>
+  <section class="section container">
+    <div class="cta-band">
+      <h2>¿Buscas un equipo o temporada concreta?</h2>
+      <p>Explora el catálogo completo y filtra por selección, club o edición retro.</p>
+      <a href="tienda.html" class="btn btn-primary" style="margin-top: 1rem;">Ir a la tienda</a>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <a href="#top" class="brand" aria-label="Reviu — inicio">
-        <img src="img/logo.svg" alt="" width="32" height="32" class="brand-mark">
-        <span class="brand-name">Reviu</span>
-      </a>
-      <p>Tarjetas inteligentes para reseñas de Google. Más confianza, más clientes.</p>
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>Kickoff Shirts</h4>
+      <p>Camisetas de fútbol oficiales y retro. Catálogo curado, calidad primero.</p>
     </div>
-
-    <nav class="footer-nav" aria-label="Enlaces del pie de página">
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#beneficios">Beneficios</a>
-      <a href="#precios">Precios</a>
-      <a href="#faq">Preguntas frecuentes</a>
-    </nav>
-
-    <p class="footer-copy">© <span id="year"></span> Reviu. Todos los derechos reservados.</p>
+    <div class="footer-col">
+      <h4>Tienda</h4>
+      <a href="tienda.html?cat=seleccion">Selecciones</a>
+      <a href="tienda.html?cat=club">Clubes</a>
+      <a href="tienda.html?cat=retro">Retro</a>
+    </div>
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <a href="#envios">Envíos y devoluciones</a>
+      <a href="#contacto">Contacto</a>
+      <a href="carrito.html">Mi carrito</a>
+    </div>
+    <div class="footer-col" id="contacto">
+      <h4>Contacto</h4>
+      <p>hola@kickoffshirts.example</p>
+      <p id="envios">Envíos: 24/48h península. Devoluciones gratuitas en 30 días. (Contenido de ejemplo, sustitúyelo por tus políticas reales.)</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Kickoff Shirts. Todos los derechos reservados.</span>
+    <span>Pagos procesados de forma segura por Stripe.</span>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script type="module" src="scripts/nav.js"></script>
+<script type="module" src="scripts/render-home.js"></script>
 </body>
 </html>

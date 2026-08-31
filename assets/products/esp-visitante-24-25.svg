@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title">
+<title id="title">Camiseta ESP</title>
+<rect width="400" height="400" fill="#F5F4F0"/>
+<g transform="translate(200,210)">
+  <path d="M -95 -120 L -40 -150 C -20 -120 20 -120 40 -150 L 95 -120 L 130 -60 L 95 -35 L 95 150 C 95 165 80 175 65 175 L -65 175 C -80 175 -95 165 -95 150 L -95 -35 L -130 -60 Z"
+        fill="#0B1220" stroke="#0B1220" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M -95 -120 L -40 -150 C -20 -120 20 -120 40 -150 L 95 -120 L 95 -95 L -95 -95 Z" fill="#C60B1E" stroke="#0B1220" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M -40 -150 C -20 -120 20 -120 40 -150 L 30 -140 C 15 -118 -15 -118 -30 -140 Z" fill="#0B1220" opacity="0.15"/>
+  <text x="0" y="20" text-anchor="middle" font-family="'Space Grotesk', Arial, sans-serif" font-weight="700" font-size="64" fill="#F5F4F0">7</text>
+  <text x="0" y="-60" text-anchor="middle" font-family="'Space Grotesk', Arial, sans-serif" font-weight="700" font-size="22" letter-spacing="2" fill="#F5F4F0">ESP</text>
+  
+</g>
+</svg>

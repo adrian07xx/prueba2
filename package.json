@@ -1,0 +1,12 @@
+{
+  "name": "kickoff-shirts",
+  "version": "1.0.0",
+  "description": "Tienda online de camisetas de fútbol con HTML/CSS/JS puro y Stripe Checkout vía Netlify Functions.",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "stripe": "^17.0.0"
+  }
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pago completado · Kickoff Shirts</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231f8a4c%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/variables.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="Kickoff Shirts — inicio">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span>Kickoff Shirts</span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+    </nav>
+    <div class="header-actions">
+      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">
+        Carrito
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido" class="container status-page">
+  <div class="status-icon is-success" aria-hidden="true">✓</div>
+  <h1>¡Gracias por tu compra!</h1>
+  <p>Hemos recibido tu pago correctamente. Te enviaremos un correo de confirmación con los detalles del pedido y el seguimiento del envío.</p>
+  <p id="sessionRef"></p>
+  <div class="status-actions">
+    <a href="tienda.html" class="btn btn-primary">Seguir comprando</a>
+    <a href="index.html" class="btn btn-ghost">Volver al inicio</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    <span>© 2026 Kickoff Shirts. Todos los derechos reservados.</span>
+    <span>Pagos procesados de forma segura por Stripe.</span>
+  </div>
+</footer>
+
+<script type="module" src="scripts/nav.js"></script>
+<script type="module">
+  import { clearCart } from "./scripts/cart.js";
+  clearCart();
+
+  const params = new URLSearchParams(window.location.search);
+  const sessionId = params.get("session_id");
+  if (sessionId) {
+    const ref = document.createElement("span");
+    ref.className = "order-ref";
+    ref.textContent = `Referencia de pago: ${sessionId.slice(0, 24)}…`;
+    document.getElementById("sessionRef").appendChild(ref);
+  }
+</script>
+</body>
+</html>

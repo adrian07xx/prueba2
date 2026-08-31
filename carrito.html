@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito · Kickoff Shirts</title>
+<meta name="description" content="Revisa tu carrito de camisetas y procede al pago seguro con Stripe.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231f8a4c%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22bold%22>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/variables.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/components.css">
+<link rel="stylesheet" href="styles/pages.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="Kickoff Shirts — inicio">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span>Kickoff Shirts</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="tienda.html?cat=seleccion">Selecciones</a>
+      <a href="tienda.html?cat=club">Clubes</a>
+      <a href="tienda.html?cat=retro">Retro</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="carrito.html" class="cart-link" aria-label="Ver carrito">
+        Carrito
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido" class="section container">
+  <div class="section-head">
+    <p class="eyebrow">Tu compra</p>
+    <h1>Carrito</h1>
+  </div>
+
+  <div class="cart-layout">
+    <div>
+      <div id="cartList"></div>
+      <div id="cartEmpty" class="empty-state" style="display:none;">
+        <h2>Tu carrito está vacío</h2>
+        <p>Añade alguna camiseta desde la tienda para verla aquí.</p>
+        <a href="tienda.html" class="btn btn-primary">Ir a la tienda</a>
+      </div>
+    </div>
+
+    <aside class="card cart-summary" id="cartSummary">
+      <h2>Resumen</h2>
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="summarySubtotal">0,00 €</span>
+      </div>
+      <div class="summary-row">
+        <span>Envío</span>
+        <span>Calculado en el siguiente paso</span>
+      </div>
+      <div class="summary-total">
+        <span>Total</span>
+        <span id="summaryTotal">0,00 €</span>
+      </div>
+      <button type="button" class="btn btn-primary btn-block" id="checkoutBtn" disabled>Ir a pago seguro con Stripe</button>
+      <p class="text-muted" id="checkoutStatus" style="margin-top: 0.75rem; font-size: var(--fs-100);" role="status" aria-live="polite"></p>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>Kickoff Shirts</h4>
+      <p>Camisetas de fútbol oficiales y retro. Catálogo curado, calidad primero.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Tienda</h4>
+      <a href="tienda.html?cat=seleccion">Selecciones</a>
+      <a href="tienda.html?cat=club">Clubes</a>
+      <a href="tienda.html?cat=retro">Retro</a>
+    </div>
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <a href="index.html#envios">Envíos y devoluciones</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="carrito.html">Mi carrito</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>hola@kickoffshirts.example</p>
+      <p>Envíos: 24/48h península. Devoluciones gratuitas en 30 días.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Kickoff Shirts. Todos los derechos reservados.</span>
+    <span>Pagos procesados de forma segura por Stripe.</span>
+  </div>
+</footer>
+
+<script type="module" src="scripts/nav.js"></script>
+<script type="module" src="scripts/render-cart.js"></script>
+<script type="module" src="scripts/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/*
+  Sistema de diseño — Kickoff Shirts
+  Paleta: cancha nocturna (ink) + verde césped + naranja bota (energía / CTA).
+  Tipografía: Space Grotesk (titulares, condensada y deportiva) + Inter (texto, legibilidad).
+*/
+:root {
+  /* Color */
+  --color-ink: #0e1116;
+  --color-ink-soft: #171b23;
+  --color-paper: #f5f4f0;
+  --color-surface: #ffffff;
+  --color-border: #e3e1da;
+
+  --color-text: #14181f;
+  --color-text-muted: #5b6472;
+  --color-text-on-ink: #f5f4f0;
+  --color-text-on-ink-muted: #a7aeb9;
+
+  --color-primary: #1f8a4c;
+  --color-primary-dark: #166238;
+  --color-primary-contrast: #ffffff;
+
+  --color-accent: #ff5a1f;
+  --color-accent-dark: #d6470f;
+  --color-accent-contrast: #ffffff;
+
+  --color-success: #1f8a4c;
+  --color-danger: #d6470f;
+
+  /* Tipografía */
+  --font-heading: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  --fs-100: 0.8125rem;
+  --fs-200: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-700: 2.25rem;
+  --fs-800: 3rem;
+
+  /* Espaciado */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 2px rgba(14, 17, 22, 0.06);
+  --shadow-md: 0 8px 24px rgba(14, 17, 22, 0.08);
+  --shadow-lg: 0 16px 40px rgba(14, 17, 22, 0.14);
+
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+}
